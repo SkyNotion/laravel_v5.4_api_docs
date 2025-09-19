@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Illuminate\Foundation\Testing\Concerns\MakesHttpRequests | laravel v5.4 API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Illuminate_Foundation_Testing_Concerns_MakesHttpRequests" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">laravel v5.4 API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">trait</span></li>
+                        <li><a href="../../../../Illuminate.html">Illuminate</a></li><li class="backslash">\</li><li><a href="../../../../Illuminate/Foundation.html">Foundation</a></li><li class="backslash">\</li><li><a href="../../../../Illuminate/Foundation/Testing.html">Testing</a></li><li class="backslash">\</li><li><a href="../../../../Illuminate/Foundation/Testing/Concerns.html">Concerns</a></li><li class="backslash">\</li><li>MakesHttpRequests</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>MakesHttpRequests    
+            </h1>
+    </div>
+
+    
+    <p>        trait
+    <strong>MakesHttpRequests</strong>
+</p>
+
+        
+    
+        
+
+            
+        
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_serverVariables">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$serverVariables</td>
+                <td class="last"><p>Additional server variables for the request.</p></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withServerVariables">withServerVariables</a>(array $server)
+        
+                                            <p><p>Define a set of server variables to be sent with the requests.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withoutMiddleware">withoutMiddleware</a>()
+        
+                                            <p><p>Disable middleware for the test.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $uri, array $headers = [])
+        
+                                            <p><p>Visit the given URI with a GET request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getJson">getJson</a>(string $uri, array $headers = [])
+        
+                                            <p><p>Visit the given URI with a GET request, expecting a JSON response.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_post">post</a>(string $uri, array $data = [], array $headers = [])
+        
+                                            <p><p>Visit the given URI with a POST request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_postJson">postJson</a>(string $uri, array $data = [], array $headers = [])
+        
+                                            <p><p>Visit the given URI with a POST request, expecting a JSON response.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_put">put</a>(string $uri, array $data = [], array $headers = [])
+        
+                                            <p><p>Visit the given URI with a PUT request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_putJson">putJson</a>(string $uri, array $data = [], array $headers = [])
+        
+                                            <p><p>Visit the given URI with a PUT request, expecting a JSON response.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $uri, array $data = [], array $headers = [])
+        
+                                            <p><p>Visit the given URI with a PATCH request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patchJson">patchJson</a>(string $uri, array $data = [], array $headers = [])
+        
+                                            <p><p>Visit the given URI with a PATCH request, expecting a JSON response.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $uri, array $data = [], array $headers = [])
+        
+                                            <p><p>Visit the given URI with a DELETE request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_deleteJson">deleteJson</a>(string $uri, array $data = [], array $headers = [])
+        
+                                            <p><p>Visit the given URI with a DELETE request, expecting a JSON response.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_json">json</a>(string $method, string $uri, array $data = [], array $headers = [])
+        
+                                            <p><p>Call the given URI with a JSON request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_call">call</a>(string $method, string $uri, array $parameters = [], array $cookies = [], array $files = [], array $server = [], string $content = null)
+        
+                                            <p><p>Call the given URI and return the Response.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_prepareUrlForRequest">prepareUrlForRequest</a>(string $uri)
+        
+                                            <p><p>Turn the given URI into a fully qualified URL.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_transformHeadersToServerVars">transformHeadersToServerVars</a>(array $headers)
+        
+                                            <p><p>Transform headers array to array of $<em>SERVER vars with HTTP</em>* format.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_formatServerHeaderKey">formatServerHeaderKey</a>(string $name)
+        
+                                            <p><p>Format the header name for the server array.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_extractFilesFromDataArray">extractFilesFromDataArray</a>(array $data)
+        
+                                            <p><p>Extract the file uploads from the given data array.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_createTestResponse">createTestResponse</a>(<a href="../../../../Illuminate/Http/Response.html"><abbr title="Illuminate\Http\Response">Response</abbr></a> $response)
+        
+                                            <p><p>Create the test response instance from the given response.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_withServerVariables">
+        <div class="location">at line 27</div>
+        <code>                    $this
+    <strong>withServerVariables</strong>(array $server)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Define a set of server variables to be sent with the requests.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$server</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withoutMiddleware">
+        <div class="location">at line 39</div>
+        <code>                    $this
+    <strong>withoutMiddleware</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Disable middleware for the test.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">at line 53</div>
+        <code>                    <a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+    <strong>get</strong>(string $uri, array $headers = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Visit the given URI with a GET request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getJson">
+        <div class="location">at line 67</div>
+        <code>                    <a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+    <strong>getJson</strong>(string $uri, array $headers = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Visit the given URI with a GET request, expecting a JSON response.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_post">
+        <div class="location">at line 80</div>
+        <code>                    <a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+    <strong>post</strong>(string $uri, array $data = [], array $headers = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Visit the given URI with a POST request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_postJson">
+        <div class="location">at line 95</div>
+        <code>                    <a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+    <strong>postJson</strong>(string $uri, array $data = [], array $headers = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Visit the given URI with a POST request, expecting a JSON response.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_put">
+        <div class="location">at line 108</div>
+        <code>                    <a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+    <strong>put</strong>(string $uri, array $data = [], array $headers = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Visit the given URI with a PUT request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_putJson">
+        <div class="location">at line 123</div>
+        <code>                    <a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+    <strong>putJson</strong>(string $uri, array $data = [], array $headers = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Visit the given URI with a PUT request, expecting a JSON response.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location">at line 136</div>
+        <code>                    <a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+    <strong>patch</strong>(string $uri, array $data = [], array $headers = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Visit the given URI with a PATCH request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patchJson">
+        <div class="location">at line 151</div>
+        <code>                    <a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+    <strong>patchJson</strong>(string $uri, array $data = [], array $headers = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Visit the given URI with a PATCH request, expecting a JSON response.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">at line 164</div>
+        <code>                    <a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+    <strong>delete</strong>(string $uri, array $data = [], array $headers = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Visit the given URI with a DELETE request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteJson">
+        <div class="location">at line 179</div>
+        <code>                    <a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+    <strong>deleteJson</strong>(string $uri, array $data = [], array $headers = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Visit the given URI with a DELETE request, expecting a JSON response.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_json">
+        <div class="location">at line 193</div>
+        <code>                    <a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+    <strong>json</strong>(string $method, string $uri, array $data = [], array $headers = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Call the given URI with a JSON request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_call">
+        <div class="location">at line 222</div>
+        <code>                    <a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+    <strong>call</strong>(string $method, string $uri, array $parameters = [], array $cookies = [], array $files = [], array $server = [], string $content = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Call the given URI and return the Response.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$cookies</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$files</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$server</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prepareUrlForRequest">
+        <div class="location">at line 248</div>
+        <code>            protected        string
+    <strong>prepareUrlForRequest</strong>(string $uri)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Turn the given URI into a fully qualified URL.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_transformHeadersToServerVars">
+        <div class="location">at line 267</div>
+        <code>            protected        array
+    <strong>transformHeadersToServerVars</strong>(array $headers)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Transform headers array to array of $<em>SERVER vars with HTTP</em>* format.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formatServerHeaderKey">
+        <div class="location">at line 282</div>
+        <code>            protected        string
+    <strong>formatServerHeaderKey</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Format the header name for the server array.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extractFilesFromDataArray">
+        <div class="location">at line 297</div>
+        <code>            protected        array
+    <strong>extractFilesFromDataArray</strong>(array $data)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Extract the file uploads from the given data array.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createTestResponse">
+        <div class="location">at line 324</div>
+        <code>            protected        <a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+    <strong>createTestResponse</strong>(<a href="../../../../Illuminate/Http/Response.html"><abbr title="Illuminate\Http\Response">Response</abbr></a> $response)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create the test response instance from the given response.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Illuminate/Http/Response.html"><abbr title="Illuminate\Http\Response">Response</abbr></a></td>
+                <td>$response</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

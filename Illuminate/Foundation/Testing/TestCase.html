@@ -1,0 +1,3544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Illuminate\Foundation\Testing\TestCase | laravel v5.4 API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../doctum.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Illuminate_Foundation_Testing_TestCase" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">laravel v5.4 API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Illuminate.html">Illuminate</a></li><li class="backslash">\</li><li><a href="../../../Illuminate/Foundation.html">Foundation</a></li><li class="backslash">\</li><li><a href="../../../Illuminate/Foundation/Testing.html">Testing</a></li><li class="backslash">\</li><li>TestCase</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>TestCase    
+            </h1>
+    </div>
+
+    
+    <p>    abstract     class
+    <strong>TestCase</strong>        extends <abbr title="PHPUnit\Framework\TestCase">TestCase</abbr>
+</p>
+
+        
+    
+        
+
+            
+                <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithContainer.html"><abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithContainer">InteractsWithContainer</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html"><abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithAuthentication.html"><abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithAuthentication">InteractsWithAuthentication</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.html"><abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithConsole">InteractsWithConsole</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithDatabase.html"><abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase">InteractsWithDatabase</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithSession.html"><abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithSession">InteractsWithSession</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html"><abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_serverVariables">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$serverVariables</td>
+                <td class="last"><p>Additional server variables for the request.</p></td>
+                <td><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#property_serverVariables">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_firedEvents">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$firedEvents</td>
+                <td class="last"><p>All of the fired events.</p></td>
+                <td><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#property_firedEvents">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_firedModelEvents">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$firedModelEvents</td>
+                <td class="last"><p>All of the fired model events.</p></td>
+                <td><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#property_firedModelEvents">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_dispatchedJobs">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$dispatchedJobs</td>
+                <td class="last"><p>All of the dispatched jobs.</p></td>
+                <td><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#property_dispatchedJobs">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_dispatchedNotifications">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$dispatchedNotifications</td>
+                <td class="last"><p>All of the dispatched notifications.</p></td>
+                <td><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#property_dispatchedNotifications">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_app">
+                                        protected                                        <a href="../../../Illuminate/Foundation/Application.html"><abbr title="Illuminate\Foundation\Application">Application</abbr></a>
+                                                                                
+                                    </td>
+                <td>$app</td>
+                <td class="last"><p>The Illuminate application instance.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_afterApplicationCreatedCallbacks">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$afterApplicationCreatedCallbacks</td>
+                <td class="last"><p>The callbacks that should be run after the application is created.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_beforeApplicationDestroyedCallbacks">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$beforeApplicationDestroyedCallbacks</td>
+                <td class="last"><p>The callbacks that should be run before the application is destroyed.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_setUpHasRun">
+                                        protected                                        bool
+                                                                                
+                                    </td>
+                <td>$setUpHasRun</td>
+                <td class="last"><p>Indicates if we have made it through the base setUp function.</p></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_swap">swap</a>(string $abstract, object $instance)
+        
+                                            <p><p>Register an instance of an object in the container.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithContainer.html#method_swap">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithContainer">InteractsWithContainer</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_instance">instance</a>(string $abstract, object $instance)
+        
+                                            <p><p>Register an instance of an object in the container.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithContainer.html#method_instance">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithContainer">InteractsWithContainer</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withServerVariables">withServerVariables</a>(array $server)
+        
+                                            <p><p>Define a set of server variables to be sent with the requests.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_withServerVariables">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withoutMiddleware">withoutMiddleware</a>()
+        
+                                            <p><p>Disable middleware for the test.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_withoutMiddleware">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $uri, array $headers = [])
+        
+                                            <p><p>Visit the given URI with a GET request.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_get">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getJson">getJson</a>(string $uri, array $headers = [])
+        
+                                            <p><p>Visit the given URI with a GET request, expecting a JSON response.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_getJson">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_post">post</a>(string $uri, array $data = [], array $headers = [])
+        
+                                            <p><p>Visit the given URI with a POST request.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_post">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_postJson">postJson</a>(string $uri, array $data = [], array $headers = [])
+        
+                                            <p><p>Visit the given URI with a POST request, expecting a JSON response.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_postJson">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_put">put</a>(string $uri, array $data = [], array $headers = [])
+        
+                                            <p><p>Visit the given URI with a PUT request.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_put">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_putJson">putJson</a>(string $uri, array $data = [], array $headers = [])
+        
+                                            <p><p>Visit the given URI with a PUT request, expecting a JSON response.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_putJson">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $uri, array $data = [], array $headers = [])
+        
+                                            <p><p>Visit the given URI with a PATCH request.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_patch">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patchJson">patchJson</a>(string $uri, array $data = [], array $headers = [])
+        
+                                            <p><p>Visit the given URI with a PATCH request, expecting a JSON response.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_patchJson">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $uri, array $data = [], array $headers = [])
+        
+                                            <p><p>Visit the given URI with a DELETE request.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_delete">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_deleteJson">deleteJson</a>(string $uri, array $data = [], array $headers = [])
+        
+                                            <p><p>Visit the given URI with a DELETE request, expecting a JSON response.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_deleteJson">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_json">json</a>(string $method, string $uri, array $data = [], array $headers = [])
+        
+                                            <p><p>Call the given URI with a JSON request.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_json">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_call">call</a>(string $method, string $uri, array $parameters = [], array $cookies = [], array $files = [], array $server = [], string $content = null)
+        
+                                            <p><p>Call the given URI and return the Response.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_call">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_prepareUrlForRequest">prepareUrlForRequest</a>(string $uri)
+        
+                                            <p><p>Turn the given URI into a fully qualified URL.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_prepareUrlForRequest">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_transformHeadersToServerVars">transformHeadersToServerVars</a>(array $headers)
+        
+                                            <p><p>Transform headers array to array of $<em>SERVER vars with HTTP</em>* format.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_transformHeadersToServerVars">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_formatServerHeaderKey">formatServerHeaderKey</a>(string $name)
+        
+                                            <p><p>Format the header name for the server array.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_formatServerHeaderKey">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_extractFilesFromDataArray">extractFilesFromDataArray</a>(array $data)
+        
+                                            <p><p>Extract the file uploads from the given data array.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_extractFilesFromDataArray">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_createTestResponse">createTestResponse</a>(<a href="../../../Illuminate/Http/Response.html"><abbr title="Illuminate\Http\Response">Response</abbr></a> $response)
+        
+                                            <p><p>Create the test response instance from the given response.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_createTestResponse">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_actingAs">actingAs</a>(<a href="../../../Illuminate/Contracts/Auth/Authenticatable.html"><abbr title="Illuminate\Contracts\Auth\Authenticatable">Authenticatable</abbr></a> $user, string|null $driver = null)
+        
+                                            <p><p>Set the currently logged in user for the application.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithAuthentication.html#method_actingAs">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithAuthentication">InteractsWithAuthentication</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_be">be</a>(<a href="../../../Illuminate/Contracts/Auth/Authenticatable.html"><abbr title="Illuminate\Contracts\Auth\Authenticatable">Authenticatable</abbr></a> $user, string|null $driver = null)
+        
+                                            <p><p>Set the currently logged in user for the application.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithAuthentication.html#method_be">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithAuthentication">InteractsWithAuthentication</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_seeIsAuthenticated">seeIsAuthenticated</a>(string|null $guard = null)
+        
+                                            <p><p>Assert that the user is authenticated.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithAuthentication.html#method_seeIsAuthenticated">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithAuthentication">InteractsWithAuthentication</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_dontSeeIsAuthenticated">dontSeeIsAuthenticated</a>(string|null $guard = null)
+        
+                                            <p><p>Assert that the user is not authenticated.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithAuthentication.html#method_dontSeeIsAuthenticated">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithAuthentication">InteractsWithAuthentication</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isAuthenticated">isAuthenticated</a>(string|null $guard = null)
+        
+                                            <p><p>Return true if the user is authenticated, false otherwise.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithAuthentication.html#method_isAuthenticated">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithAuthentication">InteractsWithAuthentication</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_seeIsAuthenticatedAs">seeIsAuthenticatedAs</a>($user, string|null $guard = null)
+        
+                                            <p><p>Assert that the user is authenticated as the given user.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithAuthentication.html#method_seeIsAuthenticatedAs">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithAuthentication">InteractsWithAuthentication</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_seeCredentials">seeCredentials</a>(array $credentials, string|null $guard = null)
+        
+                                            <p><p>Assert that the given credentials are valid.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithAuthentication.html#method_seeCredentials">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithAuthentication">InteractsWithAuthentication</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_dontSeeCredentials">dontSeeCredentials</a>(array $credentials, string|null $guard = null)
+        
+                                            <p><p>Assert that the given credentials are invalid.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithAuthentication.html#method_dontSeeCredentials">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithAuthentication">InteractsWithAuthentication</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_hasCredentials">hasCredentials</a>(array $credentials, string|null $guard = null)
+        
+                                            <p><p>Return true if the credentials are valid, false otherwise.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithAuthentication.html#method_hasCredentials">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithAuthentication">InteractsWithAuthentication</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_artisan">artisan</a>(string $command, array $parameters = [])
+        
+                                            <p><p>Call artisan command and return code.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.html#method_artisan">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithConsole">InteractsWithConsole</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_assertDatabaseHas">assertDatabaseHas</a>(string $table, array $data, string $connection = null)
+        
+                                            <p><p>Assert that a given where condition exists in the database.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithDatabase.html#method_assertDatabaseHas">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase">InteractsWithDatabase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_assertDatabaseMissing">assertDatabaseMissing</a>(string $table, array $data, string $connection = null)
+        
+                                            <p><p>Assert that a given where condition does not exist in the database.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithDatabase.html#method_assertDatabaseMissing">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase">InteractsWithDatabase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_assertSoftDeleted">assertSoftDeleted</a>(string $table, array $data, string $connection = null)
+        
+                                            <p><p>Assert the given record has been deleted.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithDatabase.html#method_assertSoftDeleted">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase">InteractsWithDatabase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Illuminate/Database/Connection.html"><abbr title="Illuminate\Database\Connection">Connection</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getConnection">getConnection</a>(string|null $connection = null)
+        
+                                            <p><p>Get the database connection.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithDatabase.html#method_getConnection">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase">InteractsWithDatabase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_seed">seed</a>(string $class = &#039;DatabaseSeeder&#039;)
+        
+                                            <p><p>Seed a given database connection.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithDatabase.html#method_seed">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase">InteractsWithDatabase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withSession">withSession</a>(array $data)
+        
+                                            <p><p>Set the session to the given array.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithSession.html#method_withSession">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithSession">InteractsWithSession</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_session">session</a>(array $data)
+        
+                                            <p><p>Set the session to the given array.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithSession.html#method_session">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithSession">InteractsWithSession</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_startSession">startSession</a>()
+        
+                                            <p><p>Start the session for the application.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithSession.html#method_startSession">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithSession">InteractsWithSession</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_flushSession">flushSession</a>()
+        
+                                            <p><p>Flush all of the current session data.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithSession.html#method_flushSession">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithSession">InteractsWithSession</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_expectsEvents">expectsEvents</a>(array|string $events)
+        
+                                            <p><p>Specify a list of events that should be fired for the given operation.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#method_expectsEvents">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_doesntExpectEvents">doesntExpectEvents</a>(array|string $events)
+        
+                                            <p><p>Specify a list of events that should not be fired for the given operation.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#method_doesntExpectEvents">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withoutEvents">withoutEvents</a>()
+        
+                                            <p><p>Mock the event dispatcher so all events are silenced and collected.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#method_withoutEvents">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFiredEvents">getFiredEvents</a>(array $events)
+        
+                                            <p><p>Filter the given events against the fired events.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#method_getFiredEvents">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_expectsJobs">expectsJobs</a>(array|string $jobs)
+        
+                                            <p><p>Specify a list of jobs that should be dispatched for the given operation.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#method_expectsJobs">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_doesntExpectJobs">doesntExpectJobs</a>(array|string $jobs)
+        
+                                            <p><p>Specify a list of jobs that should not be dispatched for the given operation.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#method_doesntExpectJobs">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withoutJobs">withoutJobs</a>()
+        
+                                            <p><p>Mock the job dispatcher so all jobs are silenced and collected.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#method_withoutJobs">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDispatchedJobs">getDispatchedJobs</a>(array $jobs)
+        
+                                            <p><p>Filter the given jobs against the dispatched jobs.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#method_getDispatchedJobs">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDispatched">getDispatched</a>(array $classes, array $dispatched)
+        
+                                            <p><p>Filter the given classes against an array of dispatched classes.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#method_getDispatched">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_wasDispatched">wasDispatched</a>(string $needle, array $haystack)
+        
+                                            <p><p>Check if the given class exists in an array of dispatched classes.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#method_wasDispatched">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withoutNotifications">withoutNotifications</a>()
+        
+                                            <p><p>Mock the notification dispatcher so all notifications are silenced.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#method_withoutNotifications">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_expectsNotification">expectsNotification</a>(mixed $notifiable, string $notification)
+        
+                                            <p><p>Specify a notification that is expected to be dispatched.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#method_expectsNotification">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpKernel\HttpKernelInterface">HttpKernelInterface</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_createApplication">createApplication</a>()
+        
+                                            <p><p>Creates the application.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setUp">setUp</a>()
+        
+                                            <p><p>Setup the test environment.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_refreshApplication">refreshApplication</a>()
+        
+                                            <p><p>Refresh the application instance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setUpTraits">setUpTraits</a>()
+        
+                                            <p><p>Boot the testing helper traits.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_tearDown">tearDown</a>()
+        
+                                            <p><p>Clean up the testing environment before the next test.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_afterApplicationCreated">afterApplicationCreated</a>(callable $callback)
+        
+                                            <p><p>Register a callback to be run after the application is created.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_beforeApplicationDestroyed">beforeApplicationDestroyed</a>(callable $callback)
+        
+                                            <p><p>Register a callback to be run before the application is destroyed.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_swap">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithContainer.html#method_swap">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithContainer">InteractsWithContainer</abbr></a> at line 14</div>
+        <code>            protected        object
+    <strong>swap</strong>(string $abstract, object $instance)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Register an instance of an object in the container.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$abstract</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>object</td>
+                <td>$instance</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_instance">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithContainer.html#method_instance">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithContainer">InteractsWithContainer</abbr></a> at line 26</div>
+        <code>            protected        object
+    <strong>instance</strong>(string $abstract, object $instance)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Register an instance of an object in the container.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$abstract</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>object</td>
+                <td>$instance</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withServerVariables">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_withServerVariables">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a> at line 27</div>
+        <code>                    $this
+    <strong>withServerVariables</strong>(array $server)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Define a set of server variables to be sent with the requests.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$server</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withoutMiddleware">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_withoutMiddleware">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a> at line 39</div>
+        <code>                    $this
+    <strong>withoutMiddleware</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Disable middleware for the test.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_get">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a> at line 53</div>
+        <code>                    <a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+    <strong>get</strong>(string $uri, array $headers = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Visit the given URI with a GET request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getJson">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_getJson">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a> at line 67</div>
+        <code>                    <a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+    <strong>getJson</strong>(string $uri, array $headers = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Visit the given URI with a GET request, expecting a JSON response.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_post">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_post">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a> at line 80</div>
+        <code>                    <a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+    <strong>post</strong>(string $uri, array $data = [], array $headers = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Visit the given URI with a POST request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_postJson">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_postJson">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a> at line 95</div>
+        <code>                    <a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+    <strong>postJson</strong>(string $uri, array $data = [], array $headers = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Visit the given URI with a POST request, expecting a JSON response.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_put">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_put">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a> at line 108</div>
+        <code>                    <a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+    <strong>put</strong>(string $uri, array $data = [], array $headers = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Visit the given URI with a PUT request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_putJson">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_putJson">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a> at line 123</div>
+        <code>                    <a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+    <strong>putJson</strong>(string $uri, array $data = [], array $headers = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Visit the given URI with a PUT request, expecting a JSON response.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_patch">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a> at line 136</div>
+        <code>                    <a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+    <strong>patch</strong>(string $uri, array $data = [], array $headers = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Visit the given URI with a PATCH request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patchJson">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_patchJson">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a> at line 151</div>
+        <code>                    <a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+    <strong>patchJson</strong>(string $uri, array $data = [], array $headers = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Visit the given URI with a PATCH request, expecting a JSON response.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_delete">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a> at line 164</div>
+        <code>                    <a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+    <strong>delete</strong>(string $uri, array $data = [], array $headers = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Visit the given URI with a DELETE request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteJson">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_deleteJson">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a> at line 179</div>
+        <code>                    <a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+    <strong>deleteJson</strong>(string $uri, array $data = [], array $headers = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Visit the given URI with a DELETE request, expecting a JSON response.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_json">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_json">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a> at line 193</div>
+        <code>                    <a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+    <strong>json</strong>(string $method, string $uri, array $data = [], array $headers = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Call the given URI with a JSON request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_call">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_call">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a> at line 222</div>
+        <code>                    <a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+    <strong>call</strong>(string $method, string $uri, array $parameters = [], array $cookies = [], array $files = [], array $server = [], string $content = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Call the given URI and return the Response.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$cookies</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$files</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$server</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prepareUrlForRequest">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_prepareUrlForRequest">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a> at line 248</div>
+        <code>            protected        string
+    <strong>prepareUrlForRequest</strong>(string $uri)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Turn the given URI into a fully qualified URL.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_transformHeadersToServerVars">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_transformHeadersToServerVars">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a> at line 267</div>
+        <code>            protected        array
+    <strong>transformHeadersToServerVars</strong>(array $headers)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Transform headers array to array of $<em>SERVER vars with HTTP</em>* format.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formatServerHeaderKey">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_formatServerHeaderKey">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a> at line 282</div>
+        <code>            protected        string
+    <strong>formatServerHeaderKey</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Format the header name for the server array.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extractFilesFromDataArray">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_extractFilesFromDataArray">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a> at line 297</div>
+        <code>            protected        array
+    <strong>extractFilesFromDataArray</strong>(array $data)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Extract the file uploads from the given data array.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createTestResponse">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.html#method_createTestResponse">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MakesHttpRequests">MakesHttpRequests</abbr></a> at line 324</div>
+        <code>            protected        <a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a>
+    <strong>createTestResponse</strong>(<a href="../../../Illuminate/Http/Response.html"><abbr title="Illuminate\Http\Response">Response</abbr></a> $response)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create the test response instance from the given response.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Illuminate/Http/Response.html"><abbr title="Illuminate\Http\Response">Response</abbr></a></td>
+                <td>$response</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Foundation/Testing/TestResponse.html"><abbr title="Illuminate\Foundation\Testing\TestResponse">TestResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_actingAs">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithAuthentication.html#method_actingAs">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithAuthentication">InteractsWithAuthentication</abbr></a> at line 16</div>
+        <code>                    $this
+    <strong>actingAs</strong>(<a href="../../../Illuminate/Contracts/Auth/Authenticatable.html"><abbr title="Illuminate\Contracts\Auth\Authenticatable">Authenticatable</abbr></a> $user, string|null $driver = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set the currently logged in user for the application.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Illuminate/Contracts/Auth/Authenticatable.html"><abbr title="Illuminate\Contracts\Auth\Authenticatable">Authenticatable</abbr></a></td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$driver</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_be">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithAuthentication.html#method_be">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithAuthentication">InteractsWithAuthentication</abbr></a> at line 30</div>
+        <code>                    void
+    <strong>be</strong>(<a href="../../../Illuminate/Contracts/Auth/Authenticatable.html"><abbr title="Illuminate\Contracts\Auth\Authenticatable">Authenticatable</abbr></a> $user, string|null $driver = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set the currently logged in user for the application.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Illuminate/Contracts/Auth/Authenticatable.html"><abbr title="Illuminate\Contracts\Auth\Authenticatable">Authenticatable</abbr></a></td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$driver</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_seeIsAuthenticated">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithAuthentication.html#method_seeIsAuthenticated">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithAuthentication">InteractsWithAuthentication</abbr></a> at line 43</div>
+        <code>                    $this
+    <strong>seeIsAuthenticated</strong>(string|null $guard = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Assert that the user is authenticated.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$guard</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dontSeeIsAuthenticated">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithAuthentication.html#method_dontSeeIsAuthenticated">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithAuthentication">InteractsWithAuthentication</abbr></a> at line 56</div>
+        <code>                    $this
+    <strong>dontSeeIsAuthenticated</strong>(string|null $guard = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Assert that the user is not authenticated.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$guard</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isAuthenticated">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithAuthentication.html#method_isAuthenticated">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithAuthentication">InteractsWithAuthentication</abbr></a> at line 69</div>
+        <code>            protected        bool
+    <strong>isAuthenticated</strong>(string|null $guard = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Return true if the user is authenticated, false otherwise.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$guard</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_seeIsAuthenticatedAs">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithAuthentication.html#method_seeIsAuthenticatedAs">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithAuthentication">InteractsWithAuthentication</abbr></a> at line 81</div>
+        <code>                    $this
+    <strong>seeIsAuthenticatedAs</strong>($user, string|null $guard = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Assert that the user is authenticated as the given user.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$guard</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_seeCredentials">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithAuthentication.html#method_seeCredentials">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithAuthentication">InteractsWithAuthentication</abbr></a> at line 105</div>
+        <code>                    $this
+    <strong>seeCredentials</strong>(array $credentials, string|null $guard = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Assert that the given credentials are valid.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$credentials</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$guard</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dontSeeCredentials">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithAuthentication.html#method_dontSeeCredentials">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithAuthentication">InteractsWithAuthentication</abbr></a> at line 121</div>
+        <code>                    $this
+    <strong>dontSeeCredentials</strong>(array $credentials, string|null $guard = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Assert that the given credentials are invalid.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$credentials</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$guard</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasCredentials">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithAuthentication.html#method_hasCredentials">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithAuthentication">InteractsWithAuthentication</abbr></a> at line 137</div>
+        <code>            protected        bool
+    <strong>hasCredentials</strong>(array $credentials, string|null $guard = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Return true if the credentials are valid, false otherwise.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$credentials</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$guard</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_artisan">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.html#method_artisan">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithConsole">InteractsWithConsole</abbr></a> at line 16</div>
+        <code>                    int
+    <strong>artisan</strong>(string $command, array $parameters = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Call artisan command and return code.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$command</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_assertDatabaseHas">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithDatabase.html#method_assertDatabaseHas">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase">InteractsWithDatabase</abbr></a> at line 19</div>
+        <code>            protected        $this
+    <strong>assertDatabaseHas</strong>(string $table, array $data, string $connection = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Assert that a given where condition exists in the database.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$connection</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_assertDatabaseMissing">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithDatabase.html#method_assertDatabaseMissing">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase">InteractsWithDatabase</abbr></a> at line 36</div>
+        <code>            protected        $this
+    <strong>assertDatabaseMissing</strong>(string $table, array $data, string $connection = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Assert that a given where condition does not exist in the database.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$connection</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_assertSoftDeleted">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithDatabase.html#method_assertSoftDeleted">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase">InteractsWithDatabase</abbr></a> at line 55</div>
+        <code>            protected        $this
+    <strong>assertSoftDeleted</strong>(string $table, array $data, string $connection = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Assert the given record has been deleted.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$connection</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConnection">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithDatabase.html#method_getConnection">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase">InteractsWithDatabase</abbr></a> at line 70</div>
+        <code>            protected        <a href="../../../Illuminate/Database/Connection.html"><abbr title="Illuminate\Database\Connection">Connection</abbr></a>
+    <strong>getConnection</strong>(string|null $connection = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the database connection.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$connection</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Database/Connection.html"><abbr title="Illuminate\Database\Connection">Connection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_seed">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithDatabase.html#method_seed">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase">InteractsWithDatabase</abbr></a> at line 85</div>
+        <code>                    $this
+    <strong>seed</strong>(string $class = &#039;DatabaseSeeder&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Seed a given database connection.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withSession">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithSession.html#method_withSession">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithSession">InteractsWithSession</abbr></a> at line 13</div>
+        <code>                    $this
+    <strong>withSession</strong>(array $data)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set the session to the given array.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_session">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithSession.html#method_session">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithSession">InteractsWithSession</abbr></a> at line 26</div>
+        <code>                    $this
+    <strong>session</strong>(array $data)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set the session to the given array.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startSession">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithSession.html#method_startSession">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithSession">InteractsWithSession</abbr></a> at line 42</div>
+        <code>            protected        $this
+    <strong>startSession</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Start the session for the application.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flushSession">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/InteractsWithSession.html#method_flushSession">
+<abbr title="Illuminate\Foundation\Testing\Concerns\InteractsWithSession">InteractsWithSession</abbr></a> at line 56</div>
+        <code>                    $this
+    <strong>flushSession</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Flush all of the current session data.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_expectsEvents">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#method_expectsEvents">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a> at line 50</div>
+        <code>                    $this
+    <strong>expectsEvents</strong>(array|string $events)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Specify a list of events that should be fired for the given operation.</p></p>                <p><p>These events will be mocked, so that handlers will not actually be executed.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$events</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doesntExpectEvents">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#method_doesntExpectEvents">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a> at line 76</div>
+        <code>                    $this
+    <strong>doesntExpectEvents</strong>(array|string $events)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Specify a list of events that should not be fired for the given operation.</p></p>                <p><p>These events will be mocked, so that handlers will not actually be executed.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$events</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withoutEvents">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#method_withoutEvents">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a> at line 97</div>
+        <code>            protected        $this
+    <strong>withoutEvents</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Mock the event dispatcher so all events are silenced and collected.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFiredEvents">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#method_getFiredEvents">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a> at line 116</div>
+        <code>            protected        array
+    <strong>getFiredEvents</strong>(array $events)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Filter the given events against the fired events.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$events</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_expectsJobs">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#method_expectsJobs">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a> at line 129</div>
+        <code>            protected        $this
+    <strong>expectsJobs</strong>(array|string $jobs)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Specify a list of jobs that should be dispatched for the given operation.</p></p>                <p><p>These jobs will be mocked, so that handlers will not actually be executed.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$jobs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doesntExpectJobs">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#method_doesntExpectJobs">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a> at line 155</div>
+        <code>            protected        $this
+    <strong>doesntExpectJobs</strong>(array|string $jobs)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Specify a list of jobs that should not be dispatched for the given operation.</p></p>                <p><p>These jobs will be mocked, so that handlers will not actually be executed.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$jobs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withoutJobs">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#method_withoutJobs">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a> at line 176</div>
+        <code>            protected        $this
+    <strong>withoutJobs</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Mock the job dispatcher so all jobs are silenced and collected.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDispatchedJobs">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#method_getDispatchedJobs">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a> at line 197</div>
+        <code>            protected        array
+    <strong>getDispatchedJobs</strong>(array $jobs)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Filter the given jobs against the dispatched jobs.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$jobs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDispatched">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#method_getDispatched">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a> at line 209</div>
+        <code>            protected        array
+    <strong>getDispatched</strong>(array $classes, array $dispatched)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Filter the given classes against an array of dispatched classes.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$classes</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$dispatched</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_wasDispatched">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#method_wasDispatched">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a> at line 223</div>
+        <code>            protected        bool
+    <strong>wasDispatched</strong>(string $needle, array $haystack)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Check if the given class exists in an array of dispatched classes.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$needle</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$haystack</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withoutNotifications">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#method_withoutNotifications">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a> at line 240</div>
+        <code>            protected        $this
+    <strong>withoutNotifications</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Mock the notification dispatcher so all notifications are silenced.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_expectsNotification">
+        <div class="location">in <a href="../../../Illuminate/Foundation/Testing/Concerns/MocksApplicationServices.html#method_expectsNotification">
+<abbr title="Illuminate\Foundation\Testing\Concerns\MocksApplicationServices">MocksApplicationServices</abbr></a> at line 262</div>
+        <code>            protected        $this
+    <strong>expectsNotification</strong>(mixed $notifiable, string $notification)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Specify a notification that is expected to be dispatched.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$notifiable</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$notification</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createApplication">
+        <div class="location">at line 56</div>
+        <code>    abstract                <abbr title="Symfony\Component\HttpKernel\HttpKernelInterface">HttpKernelInterface</abbr>
+    <strong>createApplication</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates the application.</p></p>                <p><p>Needs to be implemented by subclasses.</p></p>        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpKernel\HttpKernelInterface">HttpKernelInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUp">
+        <div class="location">at line 63</div>
+        <code>            protected        void
+    <strong>setUp</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Setup the test environment.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_refreshApplication">
+        <div class="location">at line 87</div>
+        <code>            protected        void
+    <strong>refreshApplication</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Refresh the application instance.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUpTraits">
+        <div class="location">at line 97</div>
+        <code>            protected        array
+    <strong>setUpTraits</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Boot the testing helper traits.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_tearDown">
+        <div class="location">at line 125</div>
+        <code>            protected        void
+    <strong>tearDown</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Clean up the testing environment before the next test.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_afterApplicationCreated">
+        <div class="location">at line 159</div>
+        <code>                    void
+    <strong>afterApplicationCreated</strong>(callable $callback)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Register a callback to be run after the application is created.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_beforeApplicationDestroyed">
+        <div class="location">at line 174</div>
+        <code>            protected        void
+    <strong>beforeApplicationDestroyed</strong>(callable $callback)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Register a callback to be run before the application is destroyed.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>
